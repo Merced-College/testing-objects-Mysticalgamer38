@@ -29,5 +29,21 @@ public class Main {
         d3.setBreed("Border Collie");
         System.out.println("d3 age via getter = " + d3.getAge());
         System.out.println("d3 now = " + d3);
+
+        laptop l1 = new laptop();
+        System.out.println("l1 (default constructor): " + l1);
+
+        laptop l2 = new laptop("Dell", 16, 15.6);
+        System.out.println("l2 (parameterized): " + l2);
+
+        l2.setRamGB(32);
+        l2.setBrand("HP");
+        l2.setScreenSize(17.0);
+
+        System.out.println("Updated l2 brand: " + l2.getBrand());
+        System.out.println("Updated l2 RAM: " + l2.getRamGB());
+        System.out.println("Updated l2 screen size: " + l2.getScreenSize());
+
+        System.out.println("l2 after updates: " + l2);
     }
 }
