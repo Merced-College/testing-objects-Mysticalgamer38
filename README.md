@@ -13,3 +13,9 @@ Q3. In part B, the field variables were set to their default values until such a
 Q4. When the object was printed in Part A, the output came out in the default form of "ClassName@hexcode". In Part D, however, the output became readable since you have overridden the toString() method. The use of the @Override annotation is helpful since Java checks if you really are overriding an actual method. If you make mistakes on your method name or signature, Java warns you instead of creating a new one.
 
 Q5. Privacy ensures that these values cannot be altered from anywhere else in the program. Methods like getters and setters allow you to have complete control over the reading and updating of the value. For instance, if we use setters to update the value for the ‘age’ field, we could ensure that only positive integers are accepted.
+
+Reflection #1: Before toString, what printed when you printed an object? Why?
+Prior to adding the toString() function, the output was in the form of Laptop@3f99bd52. This is what happens by default in Java since it automatically inherits the toString() function from the parent Object class, which simply prints the class name followed by an address in memory.
+
+Reflection #2: List your class’s three fields and their default values before you set anything.
+The three fields for my class are brand, ramGB, and screenSize. The String field prints as “null” since it is a reference type, while the integer and floating point fields print as zero since they are both primitive types, all default values assigned by Java in the absence of a constructor.
